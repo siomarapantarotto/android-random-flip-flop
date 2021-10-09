@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Random Flip Flop</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="nothing_has_been_selected">Nothing has been selected, choose either HEADS or TAILS.</string>
+    <string name="you_have_chosen_heads">I see you\'ve chosen HEADS.</string>
+    <string name="you_have_chosen_tails">I see you\'ve chosen TAILS.</string>
+    <string name="game_result">Game Result</string>
+    <string name="user_choice">Your Choice</string>
+    <string name="you_won">Congrats!\nYou won!</string>
+    <string name="you_lost">Sorry!\nYou lost!</string>
+</resources>

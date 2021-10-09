@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHowLuckyYouAre"
+        android:layout_width="323dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/rock_salt"
+        android:text="Let's see how lucky you are!"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTails"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHowLuckyYouAre"
+        app:srcCompat="@drawable/heads" />
+
+    <ImageView
+        android:id="@+id/imageViewTails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHeads"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHowLuckyYouAre"
+        app:srcCompat="@drawable/tails" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupHeadTail"
+        android:layout_width="268dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTails">
+
+        <RadioButton
+            android:id="@+id/radioButtonHeads"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="@string/heads"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTails"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/tails"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageViewClickToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupHeadTail"
+        app:srcCompat="@drawable/click_to_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
